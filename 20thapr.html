@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+    <title>For loop</title>
+</head>
+<body>
+
+
+
+   <h2>javascript For loop</h2>
+   <p id="demo"></p> 
+    
+   <script>
+       const chocolates = ["Cadbury", "M&M", "Snickers", "Feraro roucher"];
+       let i = 0;
+       let length = chocolates.length;
+       let   textor = "";
+       for(; i < length;){
+           textor += chocolates[i] + "<br>";
+           i++;
+       }document.getElementById("demo").innerHTML =textor;
+   </script><br><br><br>
+
+
+
+
+
+   <h2>javascript For in  loop</h2>
+   <p id="demo2"></p> 
+        <script>
+       const courses_offered = {c1:"C",c2:"C++",c3:"java", c4:"phython"};
+       let text = "";
+       for(let x in courses_offered){
+           text += courses_offered[x] + "<br>";
+           i++;
+       }
+       document.getElementById("demo2").innerHTML = text;
+       </script><br><br><br><br>
+
+
+    <h2>Javascript For of Loop</h2>
+    <p id="demo3"></p>
+       <script>
+        let language = "Skill Acedemy";
+        let testor = "";
+        for (let x of language){
+            testor += x + "<br>";
+        }
+        document.getElementById("demo3").innerHTML = testor;
+       </script><br><br><br><br>
+
+
+   
+       <h2>Javascript while loop</h2>
+    
+       <script>
+        let str = "";
+        let k = 0;
+        while (k < 5){
+            str += "<br>The number is " + k;
+            k++;
+        }
+        document.write(str);
+
+       </script><br><br><br><br>
+
+        
+       <h2>Javascript Do while Loop</h2>
+       <script>
+          let string =""
+          let z = 0;
+          do
+          {
+              string += "<br>The number is " + z;
+              z++;
+          }
+          while(z < 7);
+          document.write(string);
+       </script><br><br><br>
+
+       <script>
+           for( var a = 1; a <=5; a++){
+               var line = "";
+               for( var b = 1; b <=a; b++){
+                 line +=b;      
+               }
+               document.write("<br>"+line);
+           }
+       </script>
+
+
+
+
+
+
+
+
+</body>
+</html>
